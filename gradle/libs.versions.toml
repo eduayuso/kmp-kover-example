@@ -1,0 +1,26 @@
+[versions]
+agp                         = "8.2.0"
+kotlin                      = "1.9.20"
+activity-compose            = "1.8.1"
+compose                     = "1.5.4"
+navigation-compose          = "2.7.5"
+org-jetbrains-kotlin-jvm    = "1.8.10"
+kover                       = "0.7.5"
+
+[libraries]
+ui                          = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+ui-tooling                  = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+ui-tooling-preview          = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+foundation                  = { group = "androidx.compose.foundation", name = "foundation", version.ref = "compose" }
+material                    = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+activity-compose            = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+navigation-compose          = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
+
+[plugins]
+android-application         = { id = "com.android.application", version.ref = "agp" }
+android-library             = { id = "com.android.library", version.ref = "agp" }
+kotlin-android              = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-jvm    = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+kotlin-multiplatform        = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-kover                = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+
